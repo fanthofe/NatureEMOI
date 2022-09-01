@@ -1,0 +1,262 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('http://fonts.cdnfonts.com/css/abril-fatface');
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* TETE DE PAGE */
+
+header {
+    width: 100%;
+    height:70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    transition: all 0.3s ease-out;
+}
+
+header img {
+    width: 150px;
+}
+
+.anim-header {
+    z-index: 1;
+    padding: 10px;
+    background: #333;
+    opacity: 0.8;
+    color: #f1f1f1;
+}
+
+.top-page
+ {
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    height: 80vh;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* LANDING PAGE */
+
+.landing-page {
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 160px;
+}
+
+/* MENU DE NAVIGATION */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+
+.menu li {
+    color: white;
+}
+
+/* SERVICES */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-text {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* MEILLEURES VENTES */
+
+.best-seller {
+    padding: 50px 100px;
+}
+
+h2::first-letter {
+    border-bottom: 7px solid #ADD981;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+}
+
+.best-plant {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.plant1 {
+    background-image: url(../images/nos_meilleures_ventes/1.jpg);
+
+}
+
+.plant2 {
+    background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.plant3 {
+    background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+.plant4 {
+    background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+.plant-details {
+    background-color: #FFFFFFDF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 20px;
+    line-height: 3px;
+}
+
+.plant-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.plant-price {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ADD981;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: #ADD981;
+    border-radius: 25px;
+    border: none;
+}
+
+/* NOS PLANTES */
+
+.plant-stock {
+    padding: 50px 100px;
+}
+
+.plant-grid {
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.plant-grid1 {
+    background-image: url(../images/nos_plantes/1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.plant-grid2 {
+    background-image: url(../images/nos_plantes/2.jpg);
+    grid-column: 3/5;
+    margin-bottom: 10px;
+}
+
+.plant-grid3 {
+    background-image: url(../images/nos_plantes/3.jpg);
+    grid-column: 3/5;
+    margin-bottom: 10px;
+}
+
+.plant-grid4 {
+    background-image: url(../images/nos_plantes/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+    margin-right: 10px;
+}
+
+.plant-grid5 {
+    background-image: url(../images/nos_plantes/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.plant-grid6 {
+    background-image: url(../images/nos_plantes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+.cgv {
+    text-decoration: none;
+    color: black;
+}
